@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Duels de citations</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a id="btn-open-login-modal" class="button is-light">
+              Utilisateur
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <h1 class="title">Duels de citations</h1>
+        <p class="subtitle">Quelle est votre citation favorite ?</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="tabs is-centered">
+        <ul>
+          <li class="is-active" id="tab-duel">
+            <a>Voter</a>
+          </li>
+          <li id="tab-tout"> <a>Toutes les citations</a></li>
+        </ul>
+      </div>
+      
+      <div id="div-tout" class="tabtoutcit"></div>
+      <div class="columns" id="div-duel">
+        <div id="div-tout" class="tabtoutvote"></div>
+       </div>
+    </section>
+    <br> 
+    <div class="container"></div>
+    <div id="mdl-login" class="modal is-active">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Utilisateur</p>
+          <button
+            id="btn-close-login-modal1"
+            class="delete"
+            aria-label="close"
+          ></button>
+        </header>
+        <section class="modal-card-body">
+          <p id="elt-affichage-login">
+            Ici, il faudrait afficher le login de l'utilisateur.
+          </p>
+        </section>
+        <footer class="modal-card-foot" style="justify-content: flex-end">
+          <button id="btn-close-login-modal2" class="button">Fermer</button>
+        </footer>
+      </div>
+    </div>
+    <script src="client.js"></script>
+  </body>
+</html>

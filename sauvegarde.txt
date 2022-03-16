@@ -1,0 +1,192 @@
+/*`
+        <div class="column">
+          <div class="card">
+            <div class="columns card-content">
+              <div class="column is-one-third">
+                <div class="card-image">
+                `;
+        if (
+          user.characterDirection === "Right" ||
+          user.characterDirection === "right" ||
+          user.characterDirection === "droit" ||
+          user.characterDirection === "Droit"
+        ) {
+          etatInitial.citation.html =
+            etatInitial.citation.html +
+            `<img src="${user.image}"
+                  style="transform: scaleX(-1)"
+                /> `;
+        } else {
+          etatInitial.citation.html =
+            etatInitial.citation.html +
+            `<img
+                  src="${user.image}"
+                />`;
+        }
+        etatInitial.citation.html =
+          etatInitial.citation.html +
+          `</figure>
+                </div>
+              </div>
+              <div class="column is-8">
+                <p class="title">${user.quote}</p>
+                <p class="subtitle">${user.character} dans ${user.origin}</p>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="columns is-centered">
+                <p class="button is-danger">
+                  Voter pour la citation de gauche !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="columns card-content">
+              <div class="column is-8">
+                <p class="title">
+                  ${quote2}
+                </p>
+                <p class="subtitle">${character2} dans ${origin2}</p>
+              </div>
+              <div class="column is-one-third">
+                <div class="card-image">
+                `;
+        if (
+          characterdir === "Left" ||
+          characterdir === "left" ||
+          characterdir === "Gauche" ||
+          characterdir === "gauche"
+        ) {
+          etatInitial.citation.html =
+            etatInitial.citation.html +
+            `<img src="${image}"
+                   style="transform: scaleX(-1)"
+                 /> `;
+        } else {
+          etatInitial.citation.html =
+            etatInitial.citation.html +
+            `<img
+                   src="${image}"
+                 />`;
+        }
+        etatInitial.citation.html =
+          etatInitial.citation.html +
+          `</figure>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="columns is-centered">
+                <p class="button is-info">Voter pour la citation de droite !</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+        const localisationtab = document.querySelector(".tabtoutvote");
+        localisationtab.innerHTML = etatInitial.citation.html;
+      }
+    }
+
+    if (choix > choix2) {
+      if (index === choix2) {
+        quote2 = user.quote;
+        character2 = user.character;
+        origin2 = user.origin;
+        image = user.image;
+        characterdir = user.characterDirection;
+      }
+      if (index === choix) {
+        etatInitial.citation.html = `
+        <div class="column">
+          <div class="card">
+            <div class="columns card-content">
+              <div class="column is-one-third">
+                <div class="card-image">
+                  <figure class="image"> `;
+        if (
+          user.characterDirection === "Right" ||
+          user.characterDirection === "right" ||
+          user.characterDirection === "droit" ||
+          user.characterDirection === "Droit"
+        ) {
+          etatInitial.citation.html =
+            etatInitial.citation.html +
+            `<img src="${user.image}"
+          style="transform: scaleX(-1)"
+        /> `;
+        } else {
+          etatInitial.citation.html =
+            etatInitial.citation.html +
+            `<img
+          src="${user.image}"
+        />`;
+        }
+        etatInitial.citation.html =
+          etatInitial.citation.html +
+          `</figure>
+                </div>
+              </div>
+              <div class="column is-8">
+                <p class="title">${user.quote}</p>
+                <p class="subtitle">${user.character} dans ${user.origin}</p>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="columns is-centered">
+                <p class="button is-danger">
+                  Voter pour la citation de gauche !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="columns card-content">
+              <div class="column is-8">
+                <p class="title">
+                  ${quote2}
+                </p>
+                <p class="subtitle">${character2} dans ${origin2}</p>
+              </div>
+              <div class="column is-one-third">
+                <div class="card-image">
+                  <figure class="image"> `;
+        if (
+          characterdir === "Left" ||
+          characterdir === "left" ||
+          characterdir === "Gauche" ||
+          characterdir === "gauche"
+        ) {
+          console.log("call gauche");
+          etatInitial.citation.html =
+            etatInitial.citation.html +
+            `<img src="${image}"
+                    style="transform: scaleX(-1)"
+                  /> `;
+        } else {
+          console.log("call pas gauche");
+          etatInitial.citation.html =
+            etatInitial.citation.html +
+            `<img
+                    src="${image}"
+                  />`;
+        }
+        etatInitial.citation.html =
+          etatInitial.citation.html +
+          `</figure>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="columns is-centered">
+                <p class="button is-info">Voter pour la citation de droite !</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;*/
